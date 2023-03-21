@@ -106,7 +106,7 @@ export default function Home() {
               </label>
               <input
                 required
-                className="mt-1 rounded-lg px-2 bg-gray-100/10 py-2 border border-gray-500 placeholder:text-gray-300/40 text-[#939393]"
+                className="mt-1 rounded-lg px-2 bg-gray-100/10 py-2 border border-gray-500 placeholder:text-gray-300/40 text-[#939393] focus:outline-none focus:ring-1 focus:ring-gray-300"
                 placeholder="Your name"
                 type="text"
                 name="name"
@@ -122,7 +122,7 @@ export default function Home() {
               </label>
               <input
                 required
-                className="mt-1 rounded-lg px-2 bg-gray-100/10 py-2 border border-gray-500 placeholder:text-gray-300/40 text-[#939393]"
+                className="mt-1 rounded-lg px-2 bg-gray-100/10 py-2 border border-gray-500 placeholder:text-gray-300/40 text-[#939393] focus:outline-none focus:ring-1 focus:ring-gray-300"
                 type="email"
                 name="email"
                 placeholder="Your email"
@@ -138,7 +138,7 @@ export default function Home() {
               </label>
               <input
                 required
-                className="mt-1 rounded-lg px-2 bg-gray-100/10 py-2 border border-gray-500 placeholder:text-gray-300/40 text-[#939393]"
+                className="mt-1 rounded-lg px-2 bg-gray-100/10 py-2 border border-gray-500 placeholder:text-gray-300/40 text-[#939393] focus:outline-none focus:ring-1 focus:ring-gray-300"
                 type="text"
                 name="programme"
                 placeholder="Your programme"
