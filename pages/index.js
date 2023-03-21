@@ -147,7 +147,7 @@ export default function Home() {
             </motion.div>
             <motion.button
               variants={itemVariants}
-              className="mt-4 h-[42px] lg:h-14 lg:text-lg lg:mt-4 w-full bg-[#3B3B3B] hover:bg-[#4A4A4A] duration-300 transition-colors ease-in-out text-white rounded-lg flex items-center justify-center group"
+              className="mt-4 h-[42px] lg:h-14 lg:text-lg lg:mt-4 w-full bg-[#3B3B3B] hover:bg-[#4A4A4A] duration-300 transition-colors ease-in-out text-white rounded-lg flex items-center justify-center group focus:outline-none focus:ring-1 focus:ring-gray-300"
             >
               Sign me up{" "}
               <svg
