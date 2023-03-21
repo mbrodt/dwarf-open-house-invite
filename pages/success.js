@@ -25,7 +25,7 @@ export default function Success() {
   }, []);
   return (
     <main
-      className={`relative flex flex-col  items-center min-h-screen bg-gradient-to-b from-gray-300 to-gray-100 pt-24 pb-16 ${inter.className}`}
+      className={`relative flex flex-col  items-center min-h-screen bg-gradient-to-br to-gray-400 from-gray-100 pt-24 pb-16 ${inter.className}`}
     >
       <p className="text-3xl font-bold">Thank you!</p>
       <p className="mt-4 px-8 text-lg opacity-60 text-center">

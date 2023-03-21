@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <main
-      className={`relative flex flex-col  items-center min-h-screen bg-gradient-to-b from-gray-300 to-gray-100 pt-12 lg:pt-24 pb-16 ${inter.className}`}
+      className={`relative flex flex-col  items-center min-h-screen  bg-gradient-to-br to-gray-400 from-gray-100 pt-12 lg:pt-24 pb-16 ${inter.className}`}
     >
       <motion.div
         className="max-w-xl lg:max-w-2xl mx-auto flex flex-col"
@@ -49,7 +49,7 @@ export default function Home() {
         >
           Talent Bootcamp Open house
         </motion.div>
-        <motion.div className="px-4 mt-8 text-sm md:text-base lg:text-lg text-gray-500 text-center grid gap-4">
+        <motion.div className="px-4 mt-8 text-sm md:text-base lg:text-lg text-gray-600/90 text-center grid gap-4">
           <motion.p variants={itemVariants}>
             We are happy to invite you to our open house event at our office on
             Bernhard Bangs Allé 25, 2nd floor.
@@ -145,7 +145,7 @@ export default function Home() {
             </motion.div>
             <motion.button
               variants={itemVariants}
-              className="mt-1 h-[42px] w-full bg-gray-800 hover:bg-gray-900 duration-300 transition-colors ease-in-out text-white rounded-lg flex items-center justify-center group"
+              className="mt-1 h-[42px] lg:h-14 lg:text-lg lg:mt-4 w-full bg-gray-800 hover:bg-gray-900 duration-300 transition-colors ease-in-out text-white rounded-lg flex items-center justify-center group"
             >
               Sign me up{" "}
               <svg

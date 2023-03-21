@@ -6,6 +6,7 @@ export default function Document() {
     <Html>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
+        <title>Open House | Dwarf</title>
       </Head>
 
       <body>
