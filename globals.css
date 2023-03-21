@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card:after {
+  height: 200px;
+  width: 4px;
+  position: absolute;
+  left: -1px;
+  top: 60%;
+  content: "";
+  background: linear-gradient(transparent, mediumslateblue, transparent);
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.card:hover:after {
+  top: 25%;
+  opacity: 1;
+}

@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import { motion } from "framer-motion";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -29,27 +30,28 @@ export default function Home() {
 
   return (
     <main
-      className={`relative flex flex-col  items-center min-h-screen  bg-gradient-to-br to-gray-400 from-gray-100 pt-12 lg:pt-24 pb-16 ${inter.className}`}
+      className={`relative flex flex-col  items-center min-h-screen  bg-[#1d1d1d] pt-12 lg:pt-24 pb-16 lg:pb-24 ${inter.className}`}
     >
       <motion.div
-        className="max-w-xl lg:max-w-2xl mx-auto flex flex-col"
+        className="max-w-xl lg:max-w-2xl mx-4 sm:mx-8 flex flex-col bg-[#272727] pb-8 rounded-lg card relative"
         variants={container}
         initial="hidden"
         animate="show"
       >
         <motion.img
-          className="mx-auto w-[200px] lg:w-[300px] h-[100px] lg:[h-150px]"
-          src="/dwarf.svg"
+          className="mx-auto w-[200px] lg:w-[300px] h-[100px] lg:[h-150px] mt-8"
+          src="/dwarf2.svg"
           alt="Next.js Logo"
           variants={itemVariants}
         />
+
         <motion.div
-          className="bg-gray-200 text-center mx-auto  px-4 py-2 font-semibold tracking-widest uppercase rounded-lg mt-4 lg:mt-6 "
+          className="bg-gray-200 text-center mx-auto  px-4 py-2 font-semibold tracking-widest uppercase rounded-lg mt-4 lg:mt-6 text-sm"
           variants={itemVariants}
         >
           Talent Bootcamp Open house
         </motion.div>
-        <motion.div className="px-4 mt-8 text-sm md:text-base lg:text-lg text-gray-600/90 text-center grid gap-4">
+        <motion.div className="px-4 mt-8 text-sm md:text-base lg:text-lg text-[#939393] text-center grid gap-4 lg:px-8">
           <motion.p variants={itemVariants}>
             We are happy to invite you to our open house event at our office on
             Bernhard Bangs Allé 25, 2nd floor.
@@ -97,14 +99,14 @@ export default function Home() {
           <div className="mt-4 grid gap-3">
             <motion.div variants={itemVariants} className="flex flex-col">
               <label
-                className="text-gray-600 text-xs font-semibold"
+                className="text-[#939393] text-xs font-semibold"
                 htmlFor="name"
               >
                 Name
               </label>
               <input
                 required
-                className="mt-1 rounded-lg px-2 py-2 border border-gray-300"
+                className="mt-1 rounded-lg px-2 bg-gray-100/10 py-2 border border-gray-500 placeholder:text-gray-300/40 text-[#939393]"
                 placeholder="Your name"
                 type="text"
                 name="name"
@@ -113,14 +115,14 @@ export default function Home() {
             </motion.div>
             <motion.div variants={itemVariants} className="flex flex-col">
               <label
-                className="text-gray-600 text-xs font-semibold"
+                className="text-[#939393] text-xs font-semibold"
                 htmlFor="email"
               >
                 Email
               </label>
               <input
                 required
-                className="mt-1 rounded-lg px-2 py-2 border border-gray-300"
+                className="mt-1 rounded-lg px-2 bg-gray-100/10 py-2 border border-gray-500 placeholder:text-gray-300/40 text-[#939393]"
                 type="email"
                 name="email"
                 placeholder="Your email"
@@ -129,14 +131,14 @@ export default function Home() {
             </motion.div>
             <motion.div variants={itemVariants} className="flex flex-col">
               <label
-                className="text-gray-600 text-xs font-semibold"
+                className="text-[#939393] text-xs font-semibold"
                 htmlFor="programme"
               >
                 Currently studying
               </label>
               <input
                 required
-                className="mt-1 rounded-lg px-2 py-2 border border-gray-300"
+                className="mt-1 rounded-lg px-2 bg-gray-100/10 py-2 border border-gray-500 placeholder:text-gray-300/40 text-[#939393]"
                 type="text"
                 name="programme"
                 placeholder="Your programme"
@@ -145,7 +147,7 @@ export default function Home() {
             </motion.div>
             <motion.button
               variants={itemVariants}
-              className="mt-1 h-[42px] lg:h-14 lg:text-lg lg:mt-4 w-full bg-gray-800 hover:bg-gray-900 duration-300 transition-colors ease-in-out text-white rounded-lg flex items-center justify-center group"
+              className="mt-4 h-[42px] lg:h-14 lg:text-lg lg:mt-4 w-full bg-[#3B3B3B] hover:bg-[#4A4A4A] duration-300 transition-colors ease-in-out text-white rounded-lg flex items-center justify-center group"
             >
               Sign me up{" "}
               <svg
